@@ -51,7 +51,7 @@ class MeganzClient(Client):
         if os.getenv("USE_ENV") in ["True", "true"] or not os.getenv(
             "DOWNLOAD_LOCATION"
         ):
-            self.dl_loc = f"{self.cwd}/NexaBots"
+            self.dl_loc = f"{self.cwd}/Wizard_Bots"
         else:
             self.dl_loc = os.getenv("DOWNLOAD_LOCATION")
 
@@ -170,7 +170,7 @@ class MeganzClient(Client):
                 if not can_use:
                     await self.cyeor(
                         msg,
-                        "`You're not authorized to use this bot 🙅‍♂️` \n\n**Join @NexaBotsUpdates ❤️**",
+                        "`You're not authorized to use this bot 🙅‍♂️` \n\n**Join @Wizard_Bots ❤️**",
                         True,
                     )
                     return msg.stop_propagation()
